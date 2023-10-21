@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="initial_page_values" translatable="false">
+        <item>cat</item>
+        <item>dog</item>
+        <item>pizza</item>
+    </string-array>
+    <string-array name="initial_page_entries" translatable="false">
+        <item>@string/menu_cat</item>
+        <item>@string/menu_dog</item>
+        <item>@string/menu_pizza</item>
+    </string-array>
+</resources>

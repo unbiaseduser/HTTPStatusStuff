@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/appearance">
+
+        <Preference
+            app:key="navigation_appearance_prefs"
+            app:title="@string/appearance_settings"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/behavior">
+
+        <ListPreference
+            app:key="initial_page"
+            app:title="@string/initial_page"
+            app:entries="@array/initial_page_entries"
+            app:entryValues="@array/initial_page_values"
+            app:defaultValue="cat"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

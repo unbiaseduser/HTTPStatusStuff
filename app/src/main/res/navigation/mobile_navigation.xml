@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_cat">
+
+    <fragment
+        android:id="@+id/nav_cat"
+        android:name="com.sixtyninefourtwenty.httpstatusstuff.ui.cat.CatFragment"
+        android:label="@string/menu_cat"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_dog"
+        android:name="com.sixtyninefourtwenty.httpstatusstuff.ui.dog.DogFragment"
+        android:label="@string/menu_dog"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pizza"
+        android:name="com.sixtyninefourtwenty.httpstatusstuff.ui.pizza.PizzaFragment"
+        android:label="@string/menu_pizza"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.sixtyninefourtwenty.httpstatusstuff.ui.settings.SettingsFragment"
+        android:label="@string/settings">
+        <action
+            android:id="@+id/action_nav_settings_to_navigation_appearance_settings"
+            app:destination="@id/navigation_appearance_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_appearance_settings"
+        android:name="com.sixtyninefourtwenty.theming.preferences.ThemingPreferenceFragment"
+        android:label="@string/appearance_settings"/>
+</navigation>
